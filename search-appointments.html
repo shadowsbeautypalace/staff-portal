@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Appointments</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <header>
+    <div class="header-content">
+      <h1>Search Appointments by Phone</h1>
+    </div>
+  </header>
+
+  <main>
+    <input
+      type="text"
+      id="phoneInput"
+      placeholder="Enter phone number (10–15 digits)"
+      pattern="\d{10,15}"
+      class="search-input"
+    />
+
+    <button class="btn" onclick="searchAppointments()">Search</button>
+    <div id="appointmentsContainer"></div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebaseConfig.js"></script>
+  <script src="search-appointments.js"></script>
+</body>
+</html>

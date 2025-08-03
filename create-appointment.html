@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Appointment - Shadows Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <header>
+    <div class="header-content">
+      <img src="images/img1.webp" alt="Logo" class="logo large-logo" />
+      <h1>Create Appointment</h1>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <form id="createForm" style="max-width: 400px; margin: 0 auto;">
+      <label for="name">Customer Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required pattern="\d{10,15}" title="Enter 10–15 digit number only">
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="service">Service:</label>
+      <select id="service" required>
+        <option value="">-- Select a Service --</option>
+      </select>
+
+
+
+      <button type="submit" class="btn" style="margin-top: 20px;">Create Appointment</button>
+    </form>
+
+    <p id="message" style="text-align: center; margin-top: 15px;"></p>
+  </main>
+
+  <footer>
+    <p>Shadows Beauty Palace &copy; 2025</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebaseConfig.js"></script>
+  <script src="create-appointment.js"></script>
+
+</body>
+</html>

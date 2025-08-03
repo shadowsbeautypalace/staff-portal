@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff Dashboard - Shadows Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <header>
+    <div class="header-content">
+      <img src="images/img1.webp" alt="Beauty Parlor Logo" class="logo large-logo" />
+      <h1>Staff Dashboard</h1>
+      <button id="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <p>Welcome to the internal system. Choose an option below:</p>
+
+    <div class="dashboard-buttons">
+      <a href="appointments.html" class="btn">📅 Manage Appointments</a>
+      <a href="create-appointment.html" class="btn">➕ Create Appointment</a>
+      <a href="search-appointments.html" class="btn">🔍 Search Appointments by Phone Number</a>
+      <a href="upcoming-appointments.html" class="btn">🗓️ View Next 2 Weeks</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Shadows Beauty Palace &copy; 2025</p>
+  </footer>
+
+  <script>
+    document.getElementById("logout-btn").addEventListener("click", () => {
+      window.location.href = "index.html"; // Redirect back to login
+    });
+  </script>
+</body>
+</html>

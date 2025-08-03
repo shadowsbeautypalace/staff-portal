@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Appointments - Shadows Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <header>
+    <div class="header-content">
+      <img src="images/img1.webp" alt="Logo" class="logo large-logo" />
+      <h1>Manage Appointments</h1>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <label for="datePicker"><strong>Select Date:</strong></label>
+    <input type="date" id="datePicker" />
+
+    <div id="appointmentsContainer" style="margin-top: 30px;"></div>
+  </main>
+
+  <footer>
+    <p>Shadows Beauty Palace &copy; 2025</p>
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- Scripts -->
+  <script src="firebaseConfig.js"></script>
+  <script src="appointments.js"></script>
+</body>
+</html>
